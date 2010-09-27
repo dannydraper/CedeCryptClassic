@@ -1,0 +1,7 @@
+Copy CedeCryptShell.dll to C:\Program Files\CedeSoft\CedeCrypt
+Copy CedeCrypt.exe to C:\Program Files\CedeSoft\CedeCrypt
+Copy CedeCrypt.exe to C:\Windows
+Copy CCrypt.DLL to C:\Windows
+
+Register Server CedeCryptShell.dll
+Register CCrypt File Type using CedeCrypt.exe /i

@@ -1,0 +1,8 @@
+WebVersion - int
+
+LatestUpdates (Len + Data)
+NumFilesToUpdate - int
+LocalFile (Len + Data)
+WebFileLocation (Len + Data)
+
+

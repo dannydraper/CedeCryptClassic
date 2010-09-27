@@ -1,0 +1,62 @@
+Get Win32 working again
+
+install NCIS
+
+Ensure good compilation on virtual machine, make sure the setup works ok
+and everything works ok before modification
+
+
+Generate GUIDs needed to location start and end of key canvas
+Setup blank Key Canvas in CedeCrypt.exe
+
+generate guid needed to locate start and end of distribution name canvas
+Setup blank distribution name canvas in CedeCrypt.exe
+
+Remake the setup executable and ensure that no compression is applied to the
+executable so that canvas is accessible when cedecrypt.exe is inside the setup.exe
+
+Generate test public key and put into canvas
+	- will include a private key
+
+Generate test distribution name and put into name canvas
+
+Ensure test distribution name is read properly and displayed somewhere in cedecrypt application
+
+Ensure test public key is read properly from resource when saving a ccr file
+and the test public key (second one) is also used to encrypt the password
+into the ccr file - make sure that the password is encrypted at the end
+of the file so that ccr files are backward compatible
+
+ensure recovery is possible using test private key using /rp
+
+ensure cedecsoft recovery still works using /r
+
+clear the key canvas
+
+recreate setup.exe with cedecrypt.exe having a blank canvas
+
+Create distribution program that creates a public key and embeds it into
+the setup file, and saves the setup file, and saves the private key. 
+
+Ensure distribution program asks for the name of the distribution.
+
+
+
+KeyCanvas Start
+D169C884-9C83-11DD-8E99-DBE655D89593040257B6-9C84-11DD-81CB-80E855D89593
+
+	KeyData Start
+		57702DBA-9C84-11DD-906C-C8EC55D89593		
+
+	KeyData End
+		75579822-9C84-11DD-9422-ABED55D89593		
+
+
+KeyCanvas End
+1106EEE0-9C84-11DD-B673-E8E855D89593163B798A-9C84-11DD-B19F-1EE955D89593
+
+NameCanvas Start
+2E279BFA-9C84-11DD-9673-12EA55D8959334ECBBA0-9C84-11DD-9D92-66EA55D89593
+
+NameCanvas End
+3CCCBDAC-9C84-11DD-A3EC-8EEB55D895934957B0E0-9C84-11DD-A4A3-44EC55D89593

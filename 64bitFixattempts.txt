@@ -1,0 +1,20 @@
+msimg32.lib comctl32.lib Wininet.lib
+
+Internet Handler
+UIPicButton
+Appmain - init Common Controls
+
+OptionsDlgProc
+ShowWaitDialog
+m_sbcancelwaitdlg - made non static
+bool MainWindow::m_sbcancelwaitdlg = false;	 in AppMain commented out
+
+lpfnOldWndProc = (FARPROC) SetWindowLongPtr (m_hwndeditpass, GWLP_WNDPROC, (DWORD) SubProc); - in Password Window Commented out
+
+ppwnd = (PasswordWindow *) this; - in PassWordWindow commented out
+
+
+//static FARPROC lpfnOldWndProc; - commented out in PasswordWindow.h
+//static PasswordWindow *ppwnd; - commented out in PasswordWindow.h
+static long FAR PASCAL SubProc(HWND hWnd, WORD wMessage, WORD wParam, LONG lParam); - commented out in PasswordWindow.h + implementation commented out in PasswordWindow.cpp
+

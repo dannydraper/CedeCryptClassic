@@ -1,0 +1,33 @@
+1) Highlight some text in any window
+
+2) Press Ctrl-E to Encrypt
+	- Register a system-wide hotkey - Done on application startup
+		- RESEARCH: Register systemwide hotkey
+	- As soon as Hotkey is triggered, use SendKeys to do a Ctrl-X to cut the text to the clipboard
+		- void SendCtrlCut ()	- PREVIOUSSOURCE: LiveDesktop2
+	- Grab a handle to the active window (for later activating)
+		- RESEARCH: Grab the current active window
+	- Open the clipboard and Read the Text
+		- bool ClipTextToMemoryBuffer (out MemoryBuffer)   - PREVIOUSSOURCE: VirtuaJump
+
+3) Has the user set a default Encryption password?
+
+	If Yes, then NO password prompt - Text is Encrypted
+
+	If No, then Password prompt - Text is Encrypted after password is entered
+
+	When Encrypting:
+		- Clipboard Data read to Memory Buffer
+		- Encrypted data needs to be text-readable, need a function to convert encrypted buffer to text readable data
+			- void MemoryBufferToReadableText ()
+		- Also need a function to convert text readable encrypted buffer, to standard encrypted byte byffer (reverse of above)
+			- void ReadableTextToMemoryBuffer ()
+				- bool VerifyReadableText ()
+
+		- After encrypted to text readable format, clear the clipboard, and write encrypted readable text
+			- void MemoryBufferToClipText ()
+		- Switch back to window where Ctrl-E was triggered
+			- RESEARCH: Activate relevant window
+		- Use Send Keys to do a Ctrl-V
+			- void SendCtrlPaste ()
+

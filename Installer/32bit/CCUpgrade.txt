@@ -1,0 +1,6 @@
+CEDECRYPT UPGRADE ONLY
+
+This is a CedeCrypt core application upgrade only. Please only run this file if you already have CedeCrypt v2.3 or earlier installed on your system.
+
+If you do not have CedeCrypt installed on your machine DO NOT continue with this upgrade. You must acquire the full setup application from CedeSoft Ltd.
+

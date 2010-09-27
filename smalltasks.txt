@@ -1,0 +1,17 @@
+Encrypt Directory in CedeCrypt
+Checkbox for Delete Original File
+
+Screenshots for CedeTracker
+Quick Setup Guide for CedeComm
+
+trial version in CedeCrypt
+512k limit in CedeCrypt
+
+
+3rd Option on Session password Dialog to Leave Files Unencrypted
+
+
+type encrypted password twice.
+
+
+Free Decryptor for viewing encrypted files without installation.

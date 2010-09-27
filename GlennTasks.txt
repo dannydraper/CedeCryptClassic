@@ -1,0 +1,19 @@
+Tooltips on controls
+
+	- When cancelling folder encryption, there is no feedback as to what will happen
+		- need a warning message to tell the user what will happen
+
+Protected Folders:
+	- Need to place an Ok button on the dialog
+	- Make the window a modal dialog
+
+
+When decrypting/encrypting protected folders
+	- Use a system tray icon instead of progress dialog
+	- If you remove a protected folder, then you can't delete the folder itself
+		presumably because there is a lock on the folder.
+	
+Distribution Manager:
+	- Think about password policy management
+
+

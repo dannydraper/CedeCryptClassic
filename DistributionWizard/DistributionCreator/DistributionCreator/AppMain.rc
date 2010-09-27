@@ -1,0 +1,16 @@
+#include "resource.h"
+
+// The User Interface bitmap resources
+IDI_ICONSMALL ICON "Res\\AppMain.ico"
+IDI_ICON ICON "Res\\AppMain.ico"
+
+// Custom UI bitmaps
+IDB_STDBTNBASE BITMAP "Res\\Stdbtnbase.bmp" // base bitmap for a standard button.
+IDB_STDBTNHIGH BITMAP "Res\\StdbtnbaseHL.bmp" // base bitmap for a highlighted standard button.
+IDB_STDBTNDOWN BITMAP "Res\\StdbtnbaseDN.bmp" // base bitmap for a mouse down standard button.
+
+
+IDB_DIAGHEADER BITMAP "Res\\Diagheader.bmp"
+IDB_VSCROLLBASE BITMAP "Res\\VScrollbase.bmp" // bitmap for a vertical scrollbar
+IDB_BANNER BITMAP "Res\\Banner.bmp" // Bitmap for the main dialog banner
+IDB_SETUPBINARY BINARY "Res\\CedeCryptSetup.exe" // The setup application binary

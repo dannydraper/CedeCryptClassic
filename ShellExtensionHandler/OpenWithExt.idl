@@ -1,0 +1,40 @@
+// OpenWithExt.idl : IDL source for OpenWithExt.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (OpenWithExt.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(4CAB8362-8A59-11DD-8EE8-433856D89593),
+	
+		helpstring("IOpenWithCtxMenuExt Interface"),
+		pointer_default(unique)
+	]
+	interface IOpenWithCtxMenuExt : IUnknown
+	{
+	};
+
+[
+	uuid(551B5B6C-8A59-11DD-AD87-C33856D89593),
+	version(1.0),
+	helpstring("CedeCrypt Shell 1.0 Type Library")
+]
+library OPENWITHEXTLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+	// Previous GUID - AC94BA2C-8211-45D4-AB5C-C2A9BCCC8FB6
+
+//1940F972-8A58-11DD-95F6-5D2956D89593
+	[
+		uuid(1940F972-8A58-11DD-95F6-5D2956D89593),
+		helpstring("CedeCrypt Class")
+	]
+	coclass OpenWithCtxMenuExt
+	{
+		[default] interface IOpenWithCtxMenuExt;
+	};
+};

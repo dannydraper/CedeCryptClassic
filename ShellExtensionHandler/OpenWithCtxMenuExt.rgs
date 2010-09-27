@@ -1,0 +1,33 @@
+HKCR
+{
+    NoRemove *
+    {
+        NoRemove ShellEx
+        {
+            NoRemove ContextMenuHandlers
+            {
+                CedeCrypt = s '{1940F972-8A58-11DD-95F6-5D2956D89593}'
+            }
+        }
+    }
+    NoRemove Directory
+    {
+		NoRemove ShellEx
+		{
+			NoRemove ContextMenuHandlers
+			{
+				CedeCrypt = s '{1940F972-8A58-11DD-95F6-5D2956D89593}'
+			}
+		}
+    }        
+	NoRemove CLSID
+	{
+		ForceRemove {1940F972-8A58-11DD-95F6-5D2956D89593} = s 'CedeCrypt Class'
+		{
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+		}
+	}
+}
