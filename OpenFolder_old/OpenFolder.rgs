@@ -1,0 +1,49 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {2DE2822E-4FFC-4DBC-B214-D94B8087C5BE} = s 'OpenFolder Class'
+		{
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+		}
+	}
+
+	NoRemove *
+	{
+		NoRemove ShellEx
+		{
+			NoRemove ContextMenuHandlers
+			{
+				ForceRemove OpenFolder = s '{2DE2822E-4FFC-4DBC-B214-D94B8087C5BE}'
+			}
+		}
+	}
+
+	NoRemove Folder
+	{
+		NoRemove ShellEx
+		{
+			NoRemove ContextMenuHandlers
+			{
+				ForceRemove OpenFolder = s '{2DE2822E-4FFC-4DBC-B214-D94B8087C5BE}'
+			}
+		}
+	}
+	
+	NoRemove Directory
+	{
+		NoRemove Background
+		{
+			NoRemove ShellEx
+			{
+				NoRemove ContextMenuHandlers
+				{
+					ForceRemove OpenFolder = s '{2DE2822E-4FFC-4DBC-B214-D94B8087C5BE}'
+				}
+			}
+		}
+	}
+}

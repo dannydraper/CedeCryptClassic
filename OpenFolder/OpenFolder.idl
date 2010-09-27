@@ -1,0 +1,38 @@
+// OpenFolder.idl : IDL source for OpenFolder.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (OpenFolder.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(90A7C85C-C7B7-4D83-81CD-E76A9CFAE412),
+		dual,
+		helpstring("IOpenFolder Interface"),
+		pointer_default(unique)
+	]
+	interface IOpenFolder : IDispatch
+	{
+	};
+
+[
+	uuid(6DD46BB1-6185-406C-AE26-5544A39A973F),
+	version(1.0),
+	helpstring("OpenFolder 1.0 Type Library")
+]
+library OPENFOLDERLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(2DE2822E-4FFC-4DBC-B214-D94B8087C5BE),
+		helpstring("OpenFolder Class")
+	]
+	coclass OpenFolder
+	{
+		[default] interface IOpenFolder;
+	};
+};
