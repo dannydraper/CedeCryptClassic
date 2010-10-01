@@ -1,0 +1,127 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource."
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON                    "Res\\AppMain.ico"
+IDI_ICONSMALL           ICON                    "Res\\AppMain.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_STDBTNBASE          BITMAP                  "Res\\Stdbtnbase.bmp"
+IDB_STDBTNHIGH          BITMAP                  "Res\\StdbtnbaseHL.bmp"
+IDB_STDBTNDOWN          BITMAP                  "Res\\StdbtnbaseDN.bmp"
+IDB_DIAGHEADER          BITMAP                  "Res\\Diagheader.bmp"
+IDB_VSCROLLBASE         BITMAP                  "Res\\VScrollbase.bmp"
+IDB_HEADER              BITMAP                  "Res\\Header.bmp"
+IDB_PASSHEADER          BITMAP                  "Res\\Passheader.bmp"
+IDB_ABOUTHEADER         BITMAP                  "Res\\Aboutbanner.bmp"
+IDB_LICENSEIMAGE        BITMAP                  "Res\\LicenseImage.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// BINARY
+//
+
+IDB_PUBLICKEY           BINARY                  "Res\\CedeCryptPublicKey.dat"
+IDR_BINARY1             BINARY                  "Res\\TextOnlyPublicKey.dat"
+IDR_BINARY2             BINARY                  "Res\\KeyCanvas.dat"
+IDR_BINARY3             BINARY                  "Res\\NameCanvas.dat"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 254, 34
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Processing..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Your protected folders are being encrypted.\n\nYour computer will resume shutdown / suspend / hibernation shortly...",IDC_STATIC,5,4,240,26
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 247
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 29
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
